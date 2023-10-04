@@ -4,10 +4,20 @@
  * @param {number} a - a side length
  * @param {number} b - the other side length
  * @returns {number} the hypotenuse
-*/
+ */
 
-function triangleHypotenuse (a, b) {
-  return sqrt(a^2 + b^2)
+function triangleHypotenuse(a, b) {
+  let A = a * a;
+  let B = b * b;
+  console.log(B);
+  let C = Math.sqrt(A + B);
+  return C;
 }
 
-module.exports = triangleHypotenuse
+triangleHypotenuse(3, 4);
+module.exports = triangleHypotenuse;
+
+// Pythag > a^2 = b^2 + c^2
+// npm run test:medium
+
+// node .\challenges\medium\triangleHypotenuse.js
